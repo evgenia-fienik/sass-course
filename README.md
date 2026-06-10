@@ -1,117 +1,156 @@
-# Simple starter template for Sass
+# SCSS Dashboard Practice
 
-![screenshot](./demo/main-page.jpg)
+A responsive dashboard layout created as a learning project for practicing SCSS architecture, reusable components, responsive design, and working with SVG sprites.
 
-## Vanilla App Template
+## Overview
 
-Цей проект було створено за допомогою Vite. Для знайомства та налаштування
-додаткових можливостей [звернись до документації](https://vitejs.dev/).
+This project was built for educational purposes while learning SCSS/Sass.  
+The main focus of the project is not JavaScript functionality, but styling, layout structure, reusable SCSS components, and responsive UI implementation.
 
-Ключові особливості цього шаблону:
+The application includes a dashboard page and a separate companies page. The layout is built with HTML, SCSS, CSS Grid, Flexbox, and Vite.
 
-**Build Tools:** Vite.js
-**Plugins:** Autoprefixer, PostCSS Sort Media Queries
-**Styles:** SCSS
-**Reset:** \_reset.scss (Based on The New Reset CSS)
+## Pages
 
-## Створення репозиторію за шаблоном
+- `index.html` — main dashboard page
+- `companies.html` — companies page
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення
-репозиторію свого проекту. Для цього натисни на кнопку `«Use this template»` і
-обери опцію `«Create a new repository»`, як показано на зображенні.
+## Technologies Used
 
-![Creating repo from a template step 1](./demo/template-step-1.png)
+- HTML5
+- SCSS / Sass
+- CSS Grid
+- Flexbox
+- SVG sprites
+- Responsive design
+- Vite
+- PostCSS
+- Autoprefixer
 
-На наступному етапі відкриється сторінка створення нового репозиторію. Заповни
-поле його імені, переконайся, що репозиторій публічний, після чого натисни
-кнопку `«Create repository from template»`.
+## Features
 
-![Creating repo from a template step 2](./demo/template-step-2.png)
+- Responsive dashboard layout
+- Separate companies page
+- Sidebar navigation
+- Header with search and notification buttons
+- Reusable button system with different button types
+- Company cards
+- Task reports with progress bars
+- Co-workers section
+- Task list section
+- SVG sprite icons
+- Custom Montserrat fonts
+- Mobile-first styling approach
+- Organized SCSS file structure
 
-Після того, як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
-на зображенні.
+## Project Structure
 
-![Settings GitHub Actions permissions step 1](./demo/gh-actions-perm-1.png)
-
-Проскроливши сторінку до самого кінця, в секції `«Workflow permissions»` обери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це необхідно
-для автоматизації процесу деплою проекту.
-
-![Settings GitHub Actions permissions step 2](./demo/gh-actions-perm-2.png)
-
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів та папок
-репозиторію-шаблону. Далі працюй з ним, як з будь-яким іншим особистим
-репозиторієм, клонуй його собі на комп'ютер, пиши код, роби коміти та відправляй
-їх на GitHub!
-
-## Підготовка до роботи
-
-1. Переконайся, що на комп'ютері встановлено LTS-версію Node.js.
-   [Скачай та встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проекту в терміналі командою `npm install`.
-3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
-4. Перейдіть у браузері за адресою
-   [http://localhost:5173](http://localhost:5173). Ця сторінка буде автоматично
-   перезавантажуватись після збереження змін у файли проекту.
-5. Для перегляду результуючого СSS файлу виконай команду
-   `npx vite build --watch` та перейди в папку `dist/assets`
-
-## Структура проекту. Файли і папки
-
-This is the structure of the project:
-
-```plaintext
+```text
 /
-├── demo                    # Папка для файлів цієї інструкції
-├── dist                    # Результуючий код
-├── node_modules            # Node.js залежності для проекту
-├── public                  # Файли для публічного доступу та використання
-├── src                     # Вихідний код
-│   ├── fonts	            # Папка для ваших шрифтів
-│   ├── img                 # Папка для ваших зображень
-│   ├── js                  # Файли Javascript вашого проекту
-│   ├── scss                # Стилі SCSS для вашого проекту
-├── .gitignore              # Перелік файлів та папок, які ігнорує Git
-├── index.html              # Файл HTML для вашого проекту
-├── LICENSE                 # Файл ліцензії для вашого проекту
-├── package-lock.json       # Файл з поточними версіями залежностей для вашого проекту
-├── package.json            # Визначає метадані вашого проекту і його залежності
-├── postcss.config.cjs      # Конфігурація для PostCSS
-├── README.md               # Цей файл 😎
-├── vite.config.js          # Конфігурація бандлера Vite
-```
+├── public/
+│   └── sass.svg
+│
+├── src/
+│   ├── fonts/
+│   │   ├── Montserrat-Regular.woff
+│   │   ├── Montserrat-Regular.woff2
+│   │   ├── Montserrat-Medium.woff
+│   │   ├── Montserrat-Medium.woff2
+│   │   ├── Montserrat-SemiBold.woff
+│   │   ├── Montserrat-SemiBold.woff2
+│   │   ├── Montserrat-Bold.woff
+│   │   └── Montserrat-Bold.woff2
+│   │
+│   ├── img/
+│   │   ├── avatars/
+│   │   ├── webp/
+│   │   ├── icons.svg
+│   │   └── logo-sass.png
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   └── scss/
+│       ├── base/
+│       │   ├── _base.scss
+│       │   ├── _fonts.scss
+│       │   ├── _reset.scss
+│       │   ├── _visually-hidden.scss
+│       │   └── _index.scss
+│       │
+│       ├── components/
+│       │   ├── btn/
+│       │   │   ├── _btn.scss
+│       │   │   ├── _btn.base.scss
+│       │   │   └── types/
+│       │   ├── companies/
+│       │   │   ├── _company-card.scss
+│       │   │   └── _index.scss
+│       │   ├── coworkers/
+│       │   ├── _badges.scss
+│       │   ├── _logo.scss
+│       │   ├── _menu.scss
+│       │   ├── _menu-btn.scss
+│       │   ├── _notification.scss
+│       │   ├── _notification-btn.scss
+│       │   ├── _reports.scss
+│       │   ├── _search.scss
+│       │   ├── _tasks.scss
+│       │   ├── _welcome.scss
+│       │   └── _index.scss
+│       │
+│       ├── layout/
+│       │   ├── _companies.scss
+│       │   ├── _header.scss
+│       │   ├── _main.scss
+│       │   ├── _page.scss
+│       │   ├── _sidebar.scss
+│       │   └── _index.scss
+│       │
+│       ├── utils/
+│       │   ├── _functions.scss
+│       │   ├── _mixins.scss
+│       │   ├── _placeholders.scss
+│       │   └── _variables.scss
+│       │
+│       └── main.scss
+│
+├── companies.html
+├── index.html
+├── package.json
+├── postcss.config.cjs
+├── vite.config.js
+└── README.md
 
-## Подальші кроки
+## SCSS Architecture
 
-Після клонування шаблону обов’язково очистіть і оновіть наступні файли/папки:
+The SCSS code is organized into several layers:
 
-1. Очистіть файл README.md.
-2. Адаптуйте файл LICENSE до свого проекту.
-3. Очистіть `public/sass.svg`, папки `demo/`, `src/img/**/*`, `src/fonts/**/*`, а також `src/scss/**.*`, окрім файлів `style.scss` та `_reset.scss`.
-4. Видаліть вміст із файлу `src/scss/style.scss`, окрім `@use "reset.scss";`.
-5. У файлі `src/js/main.js`, залиште лише цей рядок з імпортом: `import '../scss/style.scss';`.
+- `base/` — global styles, font declarations, reset styles, and utility classes
+- `utils/` — variables, functions, mixins, and placeholders
+- `components/` — reusable UI components such as buttons, menu, search, reports, tasks, company cards, and coworker components
+- `layout/` — page-level layout blocks such as header, sidebar, main content, and companies page layout
 
-## Деплой
+## What I Practiced
 
-Продакшн версія проекту буде автоматично збиратися та деплоїтись на GitHub
-Pages, у гілку `gh-pages`, щоразу, коли оновлюється гілка `main`. Наприклад,
-після прямого пуша або прийнятого пул-реквесту. Для цього необхідно у файлі
-`package.json` змінити значення прапора `--base=/<REPO>/`, для команди `build`,
-замінивши `<REPO>` на назву свого репозиторію, та відправити зміни на GitHub.
+During this project, I practiced:
 
-```json
-"build": "vite build --base=/<REPO>/",
-```
+- SCSS file organization
+- Using `@use`
+- Creating and using variables
+- Creating SCSS functions and mixins
+- Using placeholders with `@extend`
+- Building reusable button components
+- Creating responsive layouts with CSS Grid and Flexbox
+- Working with SVG sprites
+- Styling SVG icons with `fill`, `stroke`, and `currentColor`
+- Creating separate HTML pages without page-switching JavaScript
+- Structuring a project with Vite
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) та
-виставити роздачу продакшн версії файлів з папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+## Getting Started
 
-![GitHub Pages settings](./demo/repo-settings.png)
+Install dependencies:
 
-## License
+```bash
+npm install
 
-Цей шаблон створено під [MIT License](LICENSE).
-
-**Thank you and happy coding!** 💻
+Run the project locally: npm run dev
