@@ -1,0 +1,97 @@
+@use '../../utils/placeholders';
+@use '../../utils/variables' as var;
+@use '../../utils/functions' as fn;
+@use '../../utils/mixins' as mx;
+
+.company-card {
+    position: relative;
+
+    width: 100%;
+    min-height: 196px;
+    padding: 24px;
+
+    border-radius: 24px;
+    background-color: fn.get-color('dark-tertiary'); 
+}
+.company-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+
+    margin-bottom: 32px;
+}
+
+.company-card-info {
+    min-width: 0;
+}
+
+.company-card-title {
+
+    margin-bottom: 28px;
+    @extend %accent-text;
+
+    color: fn.get-color('light-primary')
+}
+.company-card-location {
+    position: relative;
+
+    padding-left: 30px;
+
+    @extend %main-text;
+
+    color: fn.get-color('light-secondary');
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 46%;
+
+        width: 17px;
+        height: 17px;
+
+        border-radius: 54% 45% 54% 0;
+        background-color: fn.get-color('success');
+
+        transform: translateY(-60%) rotate(-45deg);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 57%;
+
+        width: 9px;
+        height: 9px;                                                                                                                                                                                                                                                                                                                                                                
+
+        border-radius: 50%;
+        background-color: fn.get-color('dark-tertiary');
+
+        transform: translateY(-95%);
+    }
+}
+
+.company-card-icon {
+    flex-shrink: 0;
+
+    
+    color: fn.get-color('light-primary');
+    fill: currentColor;
+}
+
+.company-card-icon--stroke{
+    fill: none;
+    stroke: currentColor;
+}
+
+.company-card-btn{
+
+    min-width: 89px;
+    background-color: transparent;
+    border: 1px solid currentColor;
+
+    color: fn.get-color('accent-primary');
+
+}

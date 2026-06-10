@@ -1,0 +1,22 @@
+@if index ($btn-types, frame){
+//*== Frame ===*//
+.btn--frame{
+    border-color: #F07F2E;
+    border: 1px solid #F07F2E;
+
+    &:active {
+        border-color: #D14A00;
+    }
+
+    @media (hover: hover){
+        &:hover,
+        &:focus{
+            border-color: #F15C27;
+            
+        }
+    }
+    &[disabled]{
+        border-color: rgba(#B5B5BE, 0.5);
+    }
+    }
+}
