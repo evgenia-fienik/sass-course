@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/sass-course/",
+    "build": "vite build",
+    "build:github": "vite build --base=/sass-course/",
     "preview": "vite preview",
     "watch": "npx vite build --watch"
   },
